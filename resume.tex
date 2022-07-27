@@ -1,0 +1,198 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage[hidelinks]{hyperref}
+    \usepackage[left=2cm, right=2cm, top=2cm]{geometry}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+    \vspace*{-40pt}
+
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Profile
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \vspace*{-2pt}
+  \begin{center}
+    {\Huge \scshape {Adhiyyan Kapoolia}}\\
+    \vspace*{2pt}
+    \href{mailto:adhiyyan123@gmail.com}{adhiyyan123@gmail.com} | \href{tel:+91 6280053616}{+91 6280053616}\\
+    \vspace*{2pt}
+    \textbf{\href{https://www.linkedin.com/in/adhiyyan/}{Linkedin | }}\textbf{\href{https://github.com/adhiyyan}{GitHub}}\\
+  \end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \header{Summary}
+%       \vspace{2mm}
+%     Strong professional pursuing a Bachelor of Technology in Electrical Engineering. A self-motivated and hardworking individual constantly involved in self-improvement and always ready to take up challenging tasks in order to test my skills and improve them further. Skilled in C++, Data Structure, and Front-end Web development.
+
+% \vspace{2mm} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Education
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Education}
+      \vspace{2mm}
+      \textbf{Punjab Engineering College (PEC)}\hfill Chandigarh\\
+B. Tech Electrical Engineering \textit{CGPA: 7.00} \hfill Dec 2020 - June 2024\\
+\vspace{2mm}
+      \textbf{MCM DAV School}\hfill Pathankot\\
+Senior Secondary, \textit{93.6\%} \hfill 2019 - 2020\\
+\vspace{2mm}
+      \textbf{St. Joseph\textquotesingle{}s Convent School}\hfill Pathankot\\
+Secondary, \textit{92\%} \hfill 2017 - 2018\\
+\vspace{2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Experience
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Experience}
+      \vspace{2mm}
+
+      \textbf{Coding Ninjas | Teaching Assistant} \hfill Remote | June 2022 - Oct 2022\\
+          \vspace{-1mm}
+\begin{itemize} \itemsep -2pt
+  \item Teaching Assistant at Coding Ninjas, where my key responsibilities were to explain the Concepts of Data Structures and Algorithms, Code optimization, Error handling, and Debug the codes written in C++.
+  \item Coaching 200+ students in entrylevel and advanced C++ \& Data Structures, responsible for Doubt Redressal of students via an online platform-Codezen
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     Skills
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \header{Technical Skills}
+  \vspace{2mm}
+  C++, Data Structures \& Algorithms, Python, HTML, CSS, Bootstrap, Django, MySQL
+%   \begin{tabular}{p{4cm}p{12cm}}
+%   Programming Languages: & C++, Python \\
+%   Libraries/Frameworks: & Django \\
+%   Tools / Platforms: &  \\
+%   Databases: &  \\
+%   \end{tabular}
+  \vspace{2mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    %
+    %     Projects
+    %
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      \header{Projects / Open-Source}
+      \vspace{2mm}
+      \vspace{3mm}
+      {\textbf{E-Reach(SIH 22 Finale Project)}}\textbf{ | Ongoing}\hfill{\sl  ReactJS, NodeJS, Firebase, HTML, CSS }\\
+            • Development of a web-based portal for storing and sharing of information about accessible buildings.\\
+            • It will store their physical locations so that the information can also be shown on a on-screen map.\\
+            • The system will store and share photographs and videos of such places\\
+            • This Project is still under development.\\
+          \vspace*{3mm}
+      {\textbf{Facial Recognition : Microsoft Engage}}\textbf{ | May 2022}\hfill{\sl HTML, CSS, JavaScript, Python, Django}\\
+• GitHub Link : https://github.com/adhiyyan/Microsoft-Engage-Facial-Recogniton\\
+• Developed a Facial Recognition Attendance and Crime Detection system.\\
+• Recognize and manipulate faces from Python using the face\_recognition library.\\
+• Built using dlib\textquotesingle{}s state-of-the-art face recognition built with deep learning.\\
+• User Authentication system implemented with built-in Django database.\\
+• Demo Link : https://www.youtube.com/watch?v=wgsIr8LeOxI\\
+          \vspace*{3mm}
+          {\textbf{Ticketless Entry}}\textbf{ | April 2022}\hfill{\sl HTML, CSS, JavaScript, PHP}\\
+          • GitHub Link : https://github.com/adhiyyan/SmartIndiaHackathon.github.io\\
+• To devise a QR based ticketing system with a seamless visitor experience in museums/ heritage sites.\\
+• Role based login for frequent visitors and tourists\\  • Handled all the payments and transactions using RazorPay API for payments\\ 
+         \vspace*{3mm}
+     {\textbf{Carvaan}}\textbf{ | March 2022}\hfill{\sl HTML, CSS, JavaScript, PHP}\\
+          • GitHub Link : https://github.com/adhiyyan/carvan\\
+• A web application that provides information about various tourist spots in a city.\\
+•  Role based login for frequent visitors and tourists\\  • Integrated a feature that allows users with quick cab reservation services, using Uber's efficient API\\
+         \vspace*{3mm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      %
+      %     Certifications
+      %
+      %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%       \header{Certifications}
+%       • Introduction to C++ - \textbf{\href{https://drive.google.com/file/d/1c1E41SXt4z3vQfhQGZmGi4vvgDuCnodE/view}{Coding Ninjas}}\\
+% \vspace*{1mm}
+%       • Data Structures in C++ - \textbf{\href{https://drive.google.com/file/d/1SVdQh5MjgJQKX-\_bjbvK5-6Qd9gaUr4e/view}{Coding Ninjas}}\\
+% \vspace*{1mm}
+
+\header{Achievements \& Extra Curricular}
+\begin{itemize} \itemsep -1pt
+   \item Finalist of Smart India Hackathon
+   \item Mentee @ Microsoft Engage 2022\\
+    \item 1st Place in the Hackathon conducted by IEEE(PEC)\\
+    \item Organised a three-day Athletic Meet with over 700 participants\\
+    \item As an IB Member of IEEE(PEC) organised a multinational IEEE R10 conference\\
+    \item Organised various technical events at PECFEST\\
+\end{itemize}
+\vspace*{1mm}
+
+    \ 
+    \end{document}
